@@ -1,0 +1,18 @@
+Q1) Are the HTML tags and elements the same thing? 
+
+Ans : 
+
+	No, both element and tags are different things in HTML, tags are used for defining the content of the webpage. 
+
+------------
+
+Q2) What are tags and attributes in HTML? 
+
+Ans : 	
+	Tags are of two types ->
+i) closing tags : which has a starting and an ending.
+ex : html, body, p tags
+ii) self closing tags, empty tag, void tags : which does not needs an ending, it ends by itself.
+ex : hr, br, meta tags
+
+-----------
