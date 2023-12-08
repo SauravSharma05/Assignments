@@ -16,3 +16,11 @@ ii) self closing tags, empty tag, void tags : which does not needs an ending, it
 ex : hr, br, meta tags
 
 -----------
+
+Q3) What are void elements in HTML? 
+
+Ans : 
+	Void elements are the self closing elements or tags which does not need to close itself.
+ex : hr, br, meta 
+
+----
