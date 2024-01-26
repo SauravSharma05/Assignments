@@ -1,0 +1,186 @@
+Q1) Are the HTML tags and elements the same thing? 
+
+Ans : 
+
+	No, both element and tags are different things in HTML, tags are used for defining the content of the webpage. 
+
+------------
+
+Q2) What are tags and attributes in HTML? 
+
+Ans : 	
+	Tags are of two types ->
+i) closing tags : which has a starting and an ending.
+ex : html, body, p tags
+ii) self closing tags, empty tag, void tags : which does not needs an ending, it ends by itself.
+ex : hr, br, meta tags
+
+-----------
+
+Q3) What are void elements in HTML? 
+
+Ans : 
+	Void elements are the self closing elements or tags which does not need to close itself.
+ex : hr, br, meta 
+
+----
+
+Q4) What are HTML Entities?
+
+Ans : 
+	The entities starts with "&" amperands and ends with ';' use to perform or write the html tags on html webpage.
+ex : &lt; and &gt;
+
+
+----
+
+Q5) What are different types of lists in HTML?
+
+Ans : 
+	two types of list are there is HTML
+1) Ordered list
+2) Unordered list
+
+---
+
+Q6) What is the ‘class’ attribute in HTML?
+
+Ans :
+	class attribute is used to perform CSS operations on the specific elements in HTML webpage.
+
+-----------------
+
+Q7) What is the difference between the ‘id’ attribute and the ‘class’ attribute of HTML
+elements? 
+
+Ans : 
+	- id is used in the javascript operations for HTML Elements
+	- class is used in the CSS operations for HTML Elements
+
+-----
+
+Q8) What are the various formatting tags in HTML? 
+
+Ans : strong, bold, Itallic, underlined, delete are some formatting tags in HTML
+
+-----
+
+Q9) How is Cell Padding different from Cell Spacing?
+
+Ans : 
+	cell padding : gives the difference of space between cell data and cell border
+	cell spacing : gives the difference between two cells
+
+------
+
+Q10) How can we club two or more rows or columns into a single row or column in an HTML
+table?
+
+Ans : 
+	yes, by simply using the colspan and rowspan in HTML 
+
+----
+
+Q11) What is the difference between a block-level element and an inline element?
+
+Ans : 
+	block level element are the elements which takes the whole linespace of HTML page
+	ex : parargaph, heading tags
+	inline elements : which only takes the required amount of space in the field and gives space for other contents
+	ex : bold, itallic
+
+------
+
+Q12) How to create a Hyperlink in HTML? 
+
+Ans : 
+	by using the <a> tag and defining the href information to connect the both websites.
+
+
+-----------
+
+Q13) What is the use of an iframe tag? 
+
+Ans : 
+	iframe is used to use any different websource in our websites, we can use any other webpages too with iframe, also can show documents formats.
+
+---------------------------------
+
+Q14) What is the use of a span tag? Explain with example?
+
+Ans : 
+	span tag is used to group the content and customizing everything with only span tag, we don't have to customize each time.
+
+-----
+
+Q15) How to insert a picture into a background image of a web page? 
+	
+Ans :
+	using the background property in the body tag we can use a background image in a webpage.
+
+----------
+
+Q16) How are active links different from normal links?
+
+Ans : 
+	
+	main difference is that in an active link we can visit the content by accessing the acitve link, whereas in normal link only the information of link is given we can't redirect to that content page.
+
+-----
+
+Q17) What are the different tags to separate sections of text? 
+
+Ans : 
+	<hr : horizontal rule> ,
+ 	<br : line break> , 
+	< p : paragraph> , 
+	<heading tags (h1-h6)> 
+	can be used to break the sections.
+
+----------------
+
+Q18) What is SVG? 
+
+Ans : 
+	Scalable Vector Graphics 
+	- an XML based markup language 
+	- used for defining 2D vector graphics
+	- can be changed to any size with less decrease in quality 
+	
+-----
+
+Q19) What is difference between HTML and XHTML
+
+Ans : 
+	
+	HTML : 
+	- Hypertext Markeup language
+	- it is not case sensitive
+	- doctype not neccessary to write at top
+	- closing the tags in the order of opening is not neccessary
+	
+	XHTML : 
+	- Extensible Hypertext Markup Language
+	- it is case sensitive	
+	- doctype is neccessary to write at top
+	- closing the tags in the order of opening is neccessary
+		
+----------
+
+Q20) What are logical and physical tags in HTML?
+
+Ans : 
+	Logical tags : 
+	- used for the understanding of the browser, that which type of content is used 	in the tag.
+	ex : <strong> , <address> , <code>
+
+	Physical tags : 
+	- they show the specific type of appearance the content is to be formatted
+	ex  : <i> ,  <b> , <u>
+
+
+----------------
+	 
+
+	
+	

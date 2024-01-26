@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* border: 0.5px solid black; */
+}
+.df{
+    display: flex;
+}
+.mainbox{
+    width: 90%;
+    margin: 50px auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.tn{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.card{
+    width: 32%;
+    margin-bottom: 20px;
+    border: 0.1px solid gray;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.thumbnail{
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background-color: #55595c;
+    color: white;
+}
+.summary{
+    padding: 30px;
+    flex-direction: column;
+}
+.suma{
+    justify-content: space-between;
+    margin-top: 10px;
+}
+button{
+    height: 20px;
+    width: 50px;
+}
+.butdiv{
+    border: 1px solid black;
+}
