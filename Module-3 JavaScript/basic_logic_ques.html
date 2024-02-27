@@ -18,11 +18,14 @@
                 border: 1px dashed black;
                 padding: 10px;
             }
+            pre{
+            font-size: 15px;
+            }
         </style>
             <!-- CSS Stars here -->
     </head>
     <body>
-        <h1><u>QUESTIONS</u></h1> <br><hr>
+        <h1>Basic Logic Questions</h1> <br><hr>
         <!-- box division starts here -->
         <div class="box">
             <h3>Q1:  What is JavaScript. How to use it?</h3>
@@ -35,7 +38,19 @@
             <p>Ans : when we use the data by different means, for example using string, integer, boolean, this data is considered of different types.</p>
             <hr>
             <h3>Q4: Write a mul Function Which will Work Properly When invoked With Following Syntax</h3>
-            <p></p>
+            <p>Ans : </p>
+            <pre> function mul(num1){ 
+                function mul1(num2){
+                   function mul2(num3){
+                      return num1*num2*num3;
+                      
+                   }; // end of mul2()
+                   return mul2;
+                   
+                }; // end of mul1()
+                return mul1;
+                
+             } // end of mul()</pre>
             <hr>
             <h3>Q5: What the deference between undefined and undeclare in JavaScript?</h3>
             <p>Ans : a variable that does not have a value is undefined, whereas undeclared is when a variable is not declared.</p>
@@ -63,17 +78,36 @@
             <h3>Q10: What is Condition Statement?</h3>
             <p>Ans : when we are required Condition in a program, that is if the condition is matched then the program runs further otherwise it stops or work for other conditions, using 'if' or 'ifelse' or 'nested ifelse' or 'switch' we use conditional statements</p>
             <hr>
-            <h3>Q11: Find circumference of Rectangle formula : C = 4 * a ?</h3>
+            <h3>Q11: Find circumference of square formula : C = 4 * a ?</h3>
             <p>Ans : </p>
+            <pre>
+                let side = prompt('enter side of square');
+                let c = 4*side;
+                alert('circumference of square is : '+c);
+            </pre>
             <hr>
             <h3>Q12: WAP to convert years into days and days into years?</h3>
             <p>Ans : </p>
+            <pre>
+                let days = prompt('enter days : ');
+                let y = (days/ 365);
+                alert('total years are : '+ y);
+
+                let years = prompt('enter total year : ');
+                let d = (years * 365);
+                alert('total days are : '+ y);
+            </pre>
             <hr>
             <h3>Q13: Convert temperature Fahrenheit to Celsius? (Conditional logic Question)</h3>
             <p>Ans : </p>
+            <pre>            
+                let fah = prompt('enter temp in fahrenheit : ');
+                let cel = (fah - 32) * (5/9);
+                alert('temp in celcius : '+ cel);
+            </pre>
             <hr>
             <h3>Q14: Write a JavaScript exercise to get the extension of a filename.?</h3>
-            <p>Ans : </p>
+            <p>Ans : let file_extension_name = getFileExtension('filename_here');</p>
             <hr>
             <h3>Q15: What is the result of the expression (5 > 3 && 2 < 4)?</h3>
             <p>Ans : true</p>
@@ -91,36 +125,157 @@
             <p>Ans : it to used to check whether a variable is a number or not, i.e. Not a Number (NaN)</p>
             <hr>
             <h3>Q20 : What is the difference between && and || in JavaScript?</h3>
-            <p></p>
+            <p>Ans : && denotes 'and' that both the conditions must be true, in order to be true, where as || is used for 'or' condition which states only one out of two can be true for the whole situation to be true</p>
             <hr>
             <h3>Q21 : What is the use of Void (0)?</h3>
-            <p></p>
+            <p>Ans : in javaScript, you can run code that does not change the current page by using void(0)</p>
             <hr>
             <h3>Q22 : Check Number Is Positive or Negative in JavaScript?</h3>
-            <p></p>
+            <p>Ans : </p>
+            <pre>
+                let num = prompt('enter number');
+                if(num>=0)
+                {
+                    alert('it is positive');
+                }
+                else if(num<0){
+                    alert('it is a negative number');
+                }
+            </pre>
             <hr>
             <h3>Q23 : Find the Character Is Vowel or Not ?</h3>
-            <p></p>
+            <p>Ans : </p>
+            <pre>
+                let char = prompt('enter alphabet');
+                switch(char)
+                {
+                    case 'a':
+                    case 'e':
+                    case 'i':
+                    case 'o':
+                    case 'u':
+                    alert('vowel it is');
+                    break;
+
+                    default:
+                    alert('not a vowel');
+                    break;
+                }
+            </pre>
             <hr>
             <h3>Q24 : Write to check whether a number is negative, positive or zero?</h3>
-            <p></p>
+            <p>Ans : </p>
+            <pre>
+                let num = prompt('enter number');
+                if(num>0)
+                {
+                    alert('it is positive');
+                }
+                else if(num<0){
+                    alert('it is a negative number');
+                }
+                else if(num==0)
+                {
+                    alert('zero it is');
+                }
+            </pre>
             <hr>
             <h3>Q25 : Write to find number is even or odd using ternary operator in JS?</h3>
-            <p></p>
+            <p>Ans : </p>
+            <pre>
+                let num = prompt('enter a number : ');
+                (num%2==0) ? alert('number is even') : alert('number is odd')
+            </pre>
             <hr>
             <h3>Q26 : Write find maximum number among 3 numbers using ternary operator in JS?</h3>
-            <p></p>
+            <p>Ans : </p>
+            <pre>
+                let num1 = prompt('enter number 1 : ');
+                let num2 = prompt('enter number 2 : ');
+                let num3 = prompt('enter number 3 : ');
+                ((num1> num2) && (num1>num3) ? alert('largest number is '+ num1) : 
+                (num2> num3) ? alert('largest number id  '+ num2) : alert('largest number is '+ num3))                   
+            </pre>
             <hr>
             <h3>Q27 : Write to find minimum number among 3 numbers using ternary operator in JS?</h3>
-            <p></p>
+            <p>Ans : </p>
+            <pre>
+                let num1 = prompt('enter number 1 : ');
+                let num2 = prompt('enter number 2 : ');
+                let num3 = prompt('enter number 3 : ');
+                ((num1< num2) && (num1<num3) ? alert('smallest number is '+ num1) : 
+                (num2< num3) ? alert('smallest number is  '+ num2) : alert('smallest number is '+ num3))               
+            </pre>
             <hr>
             <h3>Q28 : Write to find the largest of three numbers in JS?</h3>
-            <p></p>
+            <p>Ans : </p>
+            <pre>
+                let num1 = prompt('enter number 1 : ');
+                let num2 = prompt('enter number 2 : ');
+                let num3 = prompt('enter number 3 : ');
+                if(num1 > num2 && num1 >num3)
+                    {
+                        alert('largest number is '+ num1);
+                    }
+                    else if(num2 > num1 && num2 >num3)
+                    {
+                    alert('largest number is '+ num2);
+                    }
+                    else 
+                    {
+                    alert('largest number is '+ num3);
+                    }
+            </pre>
             <hr>
             <h3>Q29 : Write to show
                 i. Monday to Sunday using switch case in JS?
                 ii. Vowel or Consonant using switch case in JS?</h3>
-            <p></p>
+            <p>Ans : (i)</p>
+            <pre>
+                let day = prompt('enter day name');
+                switch(day)
+                {
+                    case 'Monday':  
+                    console.log('Monday');
+                    break;
+                    case 'Tuesday':
+                    console.log('Tuesday');
+                    break;
+                    case 'Wednesday':
+                    console.log('Wednesday');
+                    break;
+                    case 'Thursday':
+                    console.log('Thursday');
+                    break;
+                    case 'Friday':
+                    console.log('Friday');
+                    break;
+                    case 'Saturday':
+                    console.log('Saturday');
+                    break;
+                    case 'Sunday':
+                    console.log('Sunday');
+                    break;
+                }
+            </pre>
+            <p>Ans : (ii)</p>
+            <pre>
+                let char = prompt('enter alphabet');
+                switch(char)
+                {
+                    case 'a':
+                    case 'e':
+                    case 'i':
+                    case 'o':
+                    case 'u':
+                    console.log('vowel it is');
+                    break;
+                    
+                    default
+                    console.log('consonant it is')
+                    break;
+                }
+            </pre>
             <hr>
         </div>
         <!-- box division ends here -->
