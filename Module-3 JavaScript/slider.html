@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .mainbox{
+            display: flex;
+            padding: 10px;
+            flex-direction: column;
+            align-items: center;
+        }
+        .imgbox{
+            border: 2px solid red;
+            display: flex;
+            width: 50%;
+            height: 500px;
+            margin: 50px auto;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        .button{
+            display: flex;
+            height: 30px;
+            width: 200px;
+            justify-content: space-between;
+        }
+        button{
+            width: 80px;
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+        
+    <div class="mainbox">
+        
+        <div class="imgbox">
+            <img src="" alt="" id="img1">
+
+            
+            
+        </div>
+        <div class="button">
+            <button id="prev" onclick="prev()">Prev</button>
+            <button id="for" onclick="move()">For</button>
+        </div>
+    </div>
+
+
+    <script>
+         a = [
+                    "images/logomyntra.png",
+                    "images/blog_poster.png",
+                ]
+
+        img = document.getElementById('img1');
+                
+                
+        function prev()
+        {   
+            i=0;
+            while (a.length>i)
+             {    
+                img.src = a[i];                 
+                i++;
+            }
+            
+            // for (let index = 0; index < a.length; index++) 
+            // {
+            //     img.src = a[index];                 
+            // }
+                
+        }
+            
+            function move()
+        {
+            img.src = a[0];          
+        }
+    </script>
+</body>
+</html>

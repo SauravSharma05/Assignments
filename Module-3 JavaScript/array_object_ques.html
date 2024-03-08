@@ -28,6 +28,124 @@
     <h1>Looping Logic Questions</h1> <br><hr>
     <!-- box division starts here -->
     <div class="box">
+        <h3>Q40: Write a JavaScript Program to display the current day and time in the following format.
+            Sample Output: Today is Friday. Current Time is 12 PM: 12 : 22 2 ?</h3>
+            <p>Ans : </p>
+            <pre>
+                div id="p1"         // html div
+                div id="p2"         // html div
+            var date = new Date();      // shows date current
+            date.getDate();             // shows day of current date
+            document.getElementById("p1").innerHTML = date;
+            document.getElementById("p2").innerHTML = date;
+        </pre>
+        <hr>
+        <h3>Q41: Write a JavaScript program to get the current date?</h3>
+        <p>Ans : </p>
+        <pre>
+            div id="p1"         // html div
+            var date = new Date();      // shows date current
+            document.getElementById("p1").innerHTML = date;
+        </pre>
+        <hr>
+        <h3>Q42: Write a JavaScript program to compare two objects?</h3>
+        <p>Ans : </p>
+        <pre>
+            let a = { name: 'sam', email: "sam@gmail.com"};           
+            let b = a;
+            console.log(a === b); // true
+        </pre>
+        <hr>
+        <h3>Q43: Write a JavaScript program to convert an array of objects into CSV string?</h3>
+        <p>Ans : </p>
+        <pre>
+            
+        </pre>
+        <hr>
+        <h3>Q44: Write a JavaScript program to capitalize first letter of a string?</h3>
+        <p>Ans : </p>
+        <pre>
+            str="hello";
+            let capitalized = str.charAt(0).toUpperCase();
+            console.log(capitalized);       // Hello
+        </pre>
+        <hr>
+        <h3>Q45: Write a JavaScript program to determine if a variable is array?</h3>
+        <p>Ans : </p>
+        <pre>
+            $arr = ['hi','bye'];
+            if (arr.constructor == Array)
+            {
+                alert('it is a array');
+            }
+        </pre>
+        <hr>
+        <h3>Q46: Write a JavaScript program to clone an array?</h3>
+        <p>Ans : </p>
+        <pre>
+            $arr = ['hi','bye'];
+            $clonearr = [...$arr];
+        </pre>
+        <hr>
+        <h3>Q47: Print the length of the string on the browser console using console.log()?</h3>
+        <p>Ans : </p>
+        <pre>
+            $hey = "hello moto";
+            console.log(hey.length());
+        </pre>
+        <hr>
+        <h3>Q48: Change all the string characters to capital letters using toUpperCase() method?</h3>
+        <p>Ans : </p>
+        <pre>
+            $hey = "hello moto";
+            console.log(hey.toUpperCase());
+        </pre>
+        <hr>
+        <h3>Q49: Form Validtion in JS?</h3>
+        <p>Ans : </p>
+        <pre>
+            
+            input id="name" onblur="handleValidation(this, hello)"          // in html doc
+            
+            function handleValidation(hi, hello) {
+                let valid = document.getElementById("name");
+                
+                if (valid.value == ""){
+                    document.getElementById(hello).innerText = 'Empty'
+                    document.getElementById(hello).style.color = 'red'
+                } else {
+                    console.log(valid.value);
+                    document.getElementById(hello).innerText = ''
+                }
+            }
+        </pre>
+        <hr>
+        <h3>Q50: how many type of JS Event? How to use it ?</h3>
+        <p>Ans : </p>
+        <p><ul>
+            <li>click events</li>
+            <li>event listener</li>
+            <li>form submission</li>
+        </ul></p>
+        <hr>
+        <h3>Q51: What is Bom vs Dom in JS?</h3>
+        <p>Ans : </p>
+        <p>DOM : document object model works with the webpage   (html tags)</p>
+        <p>DOM : browser object model works outside the webpage (alert, prompt, confirm)</p>
+        <hr>
+        <h3>Q52: Array vs object defences in JS?</h3>
+        <p>Ans : </p>
+        <p>array : it contains the data in the numbers form as indexes</p>
+        <p>objects : it contains the data in the key value naming form</p>
+        <hr>
+        <h3>Q53: Form Validtion in JS?</h3>
+        <p>Ans : </p>
+        <pre>
+            let str = 'hello moto this is a mobile';
+            const spl = str.split(' ');
+            console.log(spl[1]);                // output : moto
+        </pre>
+        <hr>
         <h3>Q62:  Check if the string contains a word Script using includes() method?</h3>
         <p>Ans : </p>
         <pre>
@@ -136,18 +254,14 @@
         <h3>Q83: What are the disadvantages of using innerHTML in JavaScript?</h3>
         <p>Ans : it takes more time as it parses the ocntent also</p>
         <hr>
-            
         
-       
-     
+        
+
     </div>
     <!-- box division ends here -->
-
     
-
+    
+    
 </body>
 </html>
 
-
-</body>
-</html>

@@ -44,44 +44,78 @@
         <h3>Q32: Write to print factorial of given number?</h3>
         <p>Ans : </p>
         <pre> 
-            
+            let num = prompt('enter a number');
+
+            function fac(num){
+                let answer = 1;
+                if (num == 0 || num == 1){
+                  return answer;
+                }
+                else if(num > 1){
+                  for(var i = num; i >= 1; i--){
+                    answer = answer * i;
+                  }
+                  return answer;
+                }
+                else{
+                  return "number has to be positive."
+                }  
+              }
+              
+              answer = fac(num)
+              console.log(answer);
         </pre>
         <hr>
         <h3>Q33: Write to print Fibonacci series up to given numbers?</h3>
         <p>Ans : </p>
         <pre> 
-
+                var n1 = 0,  n2 = 1, next_num, i;  
+                var num = parseInt (prompt (" Enter the number "));  
+                for ( i = 1; i <= num; i++)  {
+                
+                document.write (" <br> " +  n1);                          // print the n1  
+                next_num = n1 + n2;                                  // sum of n1 and n2 into the next_num  
+                
+                n1 = n2; // assign the n2 value into n2  
+                n2 = next_num;                                      // assign the next_num into n2  
+                  }  
         </pre>
         <hr>
         <h3>Q34: Write to print number in reverse order e.g.: number = 64728 ---> reverse =82746 in JS?</h3>
         <p>Ans : </p>
         <pre> 
+            let num = 123456789;
+            
+            let rev = 0;
+            while(num>0){
 
-        </pre>
-        <hr>
-        <h3>Q35: Write a program make a summation of given number (E.g., 1523 Ans: - 11) in JS?</h3>
-        <p>Ans : </p>
-        <pre> 
-
+                last_num = num%10;
+                
+                rev = rev*10 + last_num;
+                
+                num = Math.floor(num/10);
+            }
+            console.log(rev);
         </pre>
         <hr>
         <h3>Q36: Write a program you have to make a summation of first and last Digit. (E.g., 1234 Ans: -5) in JS?</h3>
         <p>Ans : </p>
         <pre> 
-
-        </pre>
-        <hr>
-        <h3>Q37: Use console.log() and escape characters to print the following pattern in JS?</h3>
-        <pre>
-            1 1 1 1 1
-            2 1 2 4 8
-            3 1 3 9 27
-            4 1 4 16 64
-            5 1 5 25 125
-        </pre>
-        <p>Ans : </p>
-        <pre> 
-
+            function fdigit(n) 
+            { 
+                while (n >= 10)  
+                    n /= 10; 
+                
+                return Math.floor(n); 
+            } 
+            
+            function ldigit(n) 
+            { 
+                return Math.floor(n % 10); 
+            } 
+                let n = 123458796; 
+                document.write(fdigit(n)+ldigit(n));            
+                // 7 
         </pre>
         <hr>
         <h3>Q38: Use console.log() and escape characters to print the following pattern in JS?</h3>
@@ -121,7 +155,17 @@
         </pre>
         <p>Ans : </p>
         <pre> 
-
+            let n = 5; 
+                let str = "";
+                let count = 0;
+                for (let i = 1; i <= n; i++) {
+                for (let j = 0; j < i; j++) {
+                    str += String.fromCharCode(count + 65);
+                    count++;
+                }
+                string += "\n";
+                }
+                console.log(str);
         </pre>
         <hr>
         <pre>
@@ -133,7 +177,18 @@
         </pre>
         <p>Ans : </p>
         <pre> 
-
+            let n = 4; 
+            let string = "";
+            let count = 1;
+            // External loop
+            for (let i = 1; i <= n; i++) {
+              for (let j = 1; j <= i; j++) {
+                string += count;
+                count++;
+              }
+              string += "\n";
+            }
+            console.log(string);
         </pre>
         <hr>
         <pre>
@@ -158,21 +213,11 @@
             }
         </pre>
         <hr>
-        <h3>Q39: Accept 3 numbers from user using while loop and check each numbers palindrome?</h3>
-        <p>Ans : </p>
-        <pre> 
-            
-        </pre>
-        <hr>
      
     </div>
     <!-- box division ends here -->
 
     
-
-</body>
-</html>
-
 
 </body>
 </html>
