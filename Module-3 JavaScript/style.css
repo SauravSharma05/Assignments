@@ -1,0 +1,35 @@
+*{
+    font-family: sans-serif;
+    background-color: whitesmoke;
+}
+button{
+    background-color: brown;
+    color: antiquewhite;
+    height: 35px;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+}
+.calc{
+    width: 25%;
+    background-color: wheat;
+    display: flex;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid red;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    box-shadow: rgb(236, 108, 108) 0px 5px 15px;
+}
+input{
+    border: none;
+    height: 25px;
+    width: 250px;
+}
+#ans1{
+    background-color: rgb(232, 44, 44);
+    color: rgb(242, 242, 82);
+    font-size: 25px;
+}

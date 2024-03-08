@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css">  <!-- link for css file -->
+</head>
+<body>
+    <!-- calc div starts here -->
+    <div class="calc">
+        <h2><b>CALCULATOR</b></h2>
+        <input type="number" id="inp1">
+        <input type="number" id="inp2">
+        
+        <div class="but">
+            <button id="add" onclick="add()">Add</button>
+            <button id="sub" onclick="sub()">Subtract</button>
+            <button id="mul" onclick="mul()">Multiply</button>
+            <button id="div" onclick="div()">Divide</button>
+        </div>
+        <div id="ans1"></div>
+    </div>
+    <!-- calc div ends here -->
+
+        <!-- script starts here -->
+        <script>
+            function add()
+        {   
+            a = document.getElementById('inp1').value;
+            b = document.getElementById('inp2').value;
+            c = parseInt(a)+parseInt(b);
+            document.getElementById("ans1").innerText = c;
+        }
+        function sub()
+        {
+            a = document.getElementById('inp1').value;
+            b = document.getElementById('inp2').value;
+            c = a-b;
+            document.getElementById("ans1").innerText = c;
+        }
+        function mul()
+        {
+            a = document.getElementById('inp1').value;
+            b = document.getElementById('inp2').value;
+            c = a*b;
+            document.getElementById("ans1").innerText = c;
+        }
+        function div()
+        {
+            a = document.getElementById('inp1').value;
+            b = document.getElementById('inp2').value;
+            c = a/b;
+            document.getElementById("ans1").innerText = c;
+        }
+    </script>
+<!-- script ends here -->
+</body>
+</html>
