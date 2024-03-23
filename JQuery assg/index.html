@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-Answers</title>
+    <!-- CSS Stars here -->
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        p{
+            font-size: 15px;
+        }
+        .box{
+            width: 60%;
+            margin: 30px 30px;
+            border: 1px dashed black;
+            padding: 10px;
+        }
+    </style>
+        <!-- CSS Stars here -->
+</head>
+<body>
+    <h1><u>QUESTIONS</u></h1> <br><hr>
+    <!-- box division starts here -->
+    <div class="box">
+        <h3>Q1: What is JQuery?</h3>
+        <p>Ans : JQuery is Javascript library, which does the work in less space than Javascript and does the same work</p>
+        <hr>
+        <h3>Q2: How to Apply CSS Using JQuery, How to Add Class and Remove Class in Jquery ,
+            JQuery Animation?</h3>
+        <p>Ans : </p>
+        <pre>
+            to apply CSS in jquery : 
+
+            $("#box").css({
+                backgroundColor: "black",
+                color: "white",
+                width: "400px",
+                border: "1px solid black",
+              });
+            </pre>
+            <hr>
+            <pre>
+                to add or remove class in jquery : 
+
+                $(document).ready(function () {
+                    
+                
+                    $("#button1").click(function () {               // Add Class
+                        $("h1").addClass("active");
+                });
+                
+                $("#button1").click(function () {            // Remove class
+                  $("h1").removeClass("active");
+                });
+
+            });
+        </pre>
+        <hr>
+        <pre>
+            to animate in jquery : 
+            
+            $("#box").css({                                 // giving css to a box div
+                backgroundColor: "black",
+                color: "white",
+                width: "400px",
+                border: "1px solid black",
+              });
+
+            
+            $(document).ready(function () {
+                
+                $("#btnAnimate").click(function () {            //animation
+                    $("#box").animate({
+                        
+                        width: '200px',
+                        
+                    },2000)
+                });
+            </pre>
+        <hr>
+        <h3>Q3 : Jquery Slider </h3>
+        <p>Ans : </p>
+        <pre>
+            (function ($) {
+                $(function () {
+              
+              
+                  $('.slider').slick({
+                    dots: true,
+                    prevArrow: '<a class="slick-prev slick-arrow" href="#" style=""><div class="icon icon--ei-arrow-left"><svg class="icon__cnt"><use xlink:href="#ei-arrow-left-icon"></use></svg></div></a>',
+                    nextArrow: '<a class="slick-next slick-arrow" href="#" style=""><div class="icon icon--ei-arrow-right"><svg class="icon__cnt"><use xlink:href="#ei-arrow-right-icon"></use></svg></div></a>',
+                    customPaging: function (slick, index) {
+                      var targetImage = slick.$slides.eq(index).find('img').attr('src');
+                      return '<img src=" ' + targetImage + ' "/>';
+                    }
+                  });
+              
+              
+                });
+              })(jQuery);
+            </pre>
+            <hr>
+        
+       
+        
+    </div>
+    <!-- box division ends here -->
+    
+
+    
+</body>
+</html>
