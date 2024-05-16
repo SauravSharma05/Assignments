@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            font-family: sans-serif;
+        }
+        p{
+            font-size: 15px;
+        }
+        .box{
+            width: 60%;
+            margin: 30px 30px;
+            border: 1px dashed black;
+            padding: 10px;
+        }
+        </style>
+    </head>
+<body>
+    
+    <h3>Q1:   What is JSON</h3>
+        <p>Ans : JavaScript Object Notation, It is commonly used for transmitting data in web applications, like sending data from server to client. </p>   
+    <hr>
+    <h3>Q2:   What is Promises</h3>
+        <p>Ans : Promises are a cleaner and more structured way of handling asynchronous operations in JavaScript. They represent a value that might be available now or in the future, resolving to either success (fulfilled) or failure (rejected). </p> 
+    <hr>
+    <h3>Q3:   Use fetch method for calling an api https://fakestoreapi.com/products</h3>
+        <p>Ans : </p>   
+        <pre>
+
+            <div id="hello"></div>
+           const hello1 = document.getElementById('hello')
+                
+                fetch("https://fakestoreapi.com/products")
+                .then((res)=>{return res.json()})
+                .then((data)=> {
+                    var hi = ""
+                    const tableb = document.getElementById('tdbody');
+                        data.forEach(item => {
+                            hi += `
+                                   <li>${item.id} ${item.title}</li>
+                            `
+                            
+                        })
+                        
+                            hello.innerHTML=  hi
+                                
+                            });    
+          </pre>
+    <hr>
+</body>
+</html>

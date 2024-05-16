@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            font-family: sans-serif;
+        }
+        p{
+            font-size: 15px;
+        }
+        .box{
+            width: 60%;
+            margin: 30px 30px;
+            border: 1px dashed black;
+            padding: 10px;
+        }
+        </style>
+    </head>
+<body>
+    
+    <h3>Q1:   Create a program to hide/show the password</h3>
+        <p>Ans : </p>   
+        <pre>
+            
+            <input type="password" name="pass" id="pass">
+            <button onclick="show()">show</button>
+
+            
+            let p = document.getElementById('pass')
+
+            function show()
+            {
+               p.type = "text"
+            }
+    </pre>
+    <hr>
+    <h3>Q2:   Create a program to hide/show the password</h3>
+        <p>Ans : </p>   
+        <pre>
+            
+            <input type="text" name="name" id="name"> <span id="msg"></span>
+            <button onclick="validate()">Submit</button>
+        
+        
+              let nm = document.getElementById('name')
+              let msg = document.getElementById('msg')
+        
+              function validate()
+              {
+                 if(nm.value =="")
+                 {
+                    msg.innerHTML = "<h4>input required ...!</h4>"
+                 }
+              }      
+    </pre>
+    <hr>
+    <h3>Q3:   Create a program to hide/show the password</h3>
+        <p>Ans : </p>   
+        <pre>
+            
+            <input type="text" name="name" id="name"> <span id="msg"></span>
+            <button onclick="validate()">Submit</button>
+        
+        
+              let nm = document.getElementById('name')
+              let msg = document.getElementById('msg')
+        
+              function validate()
+              {
+                 if(nm.value =="")
+                 {
+                    msg.innerHTML = "<h4>input required ...!</h4>"
+                 }
+              }      
+    </pre>
+    <hr>
+</body>
+</html>

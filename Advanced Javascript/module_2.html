@@ -89,15 +89,19 @@
         <pre>
             
             let salaries = {
-            "John": 100,
-            "Pete": 300,
-            "Mary": 250
-            };
-
-        function sumSalaries()
-        {
-
-        }
+                John: 100,
+                Pete: 300,
+                Mary: 250,
+              };
+              let sum = 0;
+              function sumSalaries() {
+                for (const sal in salaries) {
+                  sum = sum + salaries[sal];  
+                }
+              }
+        
+            sumSalaries();
+              console.log(sum);
     </pre>
     <hr>
     <h3>Q5:   Destructuring assignment We have an object: Write the Destructuring assignment that
