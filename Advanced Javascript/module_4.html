@@ -52,5 +52,31 @@
                             });    
           </pre>
     <hr>
+    <h3>Q4:   Write a program for promise and use it.</h3>
+        <p>Ans : </p>   
+        <pre>
+        function hello(try1)
+        {
+            console.log(hello)
+        }
+
+        const hi = new Promise((itpassed,itfailed)=>{
+
+            if(itpassed)
+            {
+                return itpassed("Hi to you");
+            }
+            else
+            {
+                return itfailed("Bye to you");
+            }
+        })
+
+        hi.then(
+            (hi)=>{ hello(hi)},
+            (bye)=>{hello(bye)}
+        )  
+          </pre>
+    <hr>
 </body>
 </html>
