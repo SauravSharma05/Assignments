@@ -51,7 +51,27 @@
       //               });    
                     
 
+      function hello(try1)
+        {
+            console.log(try1)
+        }
 
+        const hi = new Promise((itpassed,itfailed)=>{
+
+            if(itpassed)
+            {
+                return itpassed("Hi to you");
+            }
+            else
+            {
+                return itfailed("Bye to you");
+            }
+        })
+
+        hi.then(
+            (hi)=>{ hello(hi)},
+            (bye)=>{hello(bye)}
+        )  
     </script>
   </body>
 </html>
