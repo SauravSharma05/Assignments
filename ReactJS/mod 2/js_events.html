@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: red;
+        }
+        .divA{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <h1 id="hello" onmouseover="mouseover()" onmouseleave="mouseleave()">cursor here</h1>
+
+    <input type="text" name="" onkeydown="keydown()" id="">
+    
+    <input type="text" name="" onkeyup="keyup()" id="">
+
+    <div class="divA" onmousedown="onmdown()"></div>
+
+
+    <script>
+        let h1 = document.getElementById('hello')
+        let divA = document.getElementById('divA')
+        
+        function mouseover()
+        {
+                h1.style.color = "blue" 
+            }
+            function mouseleave()
+            {
+                h1.style.color = "black" 
+        }
+
+        function keydown()
+        {
+            alert('pressed a key');
+        }
+        function keyup()
+        {
+            alert('released a key');
+        }
+        function onmdown()
+        {
+            divA.style.backgroundColor = "yellow"
+        }
+    </script>
+</body>
+</html>
