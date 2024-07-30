@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-Answers</title>
+    <!-- CSS Stars here -->
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        p{
+            font-size: 15px;
+        }
+        .box{
+            width: 60%;
+            margin: 30px 30px;
+            border: 1px dashed black;
+            padding: 10px;
+        }
+    </style>
+        <!-- CSS Stars here -->
+</head>
+<body>
+    <h1><u>QUESTIONS</u></h1> <br><hr>
+    <!-- box division starts here -->
+    <div class="box">
+    <h3>Q1: What is Redux?</h3>
+    <p>Ans : </p>
+    <pre>
+        Redux is a predictable state management library for JavaScript applications, commonly used with frameworks like React. 
+        It consist of mainly 
+        * Store: The central repository where the application state is stored. It acts as the single source of truth for the application's data.
+        * Actions: Plain objects that describe an event that has occurred in the application. Each action has a type property that indicates the type of action being performed, and it may include additional data (payload).
+        * Reducers: Functions that take the current state and an action as arguments and return a new state. They determine how the state changes in response to actions.
+        * Dispatch: The method used to send actions to the store. This is the only way to trigger a state change in Redux.
+    </pre>
+    <hr>
+    <h3>Q2: What is Redux Thunk used for?</h3>
+    <p>Ans : </p>
+    <pre>   
+            Redux Thunk is a middleware for Redux that allows you to write action creators as functions instead of plain objects.
+            Redux Thunk is a middleware that extends the functionality of Redux by allowing you to write action creators as functions instead of objects.
+    </pre>
+    <hr>
+    <h3>What is Pure Component? When to use Pure Component over Component?</h3>
+    <p>Ans : </p>
+    <pre>
+        A Pure Component in React is a type of component that extends React.PureComponent. It is designed to optimize performance by preventing unnecessary re-renders. A Pure Component only re-renders when its props or state change, which is determined through a shallow comparison of the current and previous values.
+
+        class MyPureComponent extends React.PureComponent {
+            render() {
+              return (
+                <div>
+                  <h1>{this.props.title}</h1>
+                  <p>{this.props.text}</p>
+                </div>
+              );
+            }
+          }
+
+    </pre>
+    <hr>
+    
+    <h3>Q4:   What is the second argument that can optionally be passed tosetState and what is its purpose?
+        </h3>
+        <p>Ans : </p>   
+        <pre>
+            The second argument that can optionally be passed to setState in React is a callback function. This function is executed immediately after the state has been updated and the component has re-rendered.
+    </pre>
+    <hr>
+    </div>
+    <!-- box division ends here -->
+    
+
+    
+</body>
+</html>
